@@ -6,6 +6,14 @@ import Default from "ui/layouts/Default";
 export default function Awards(props) {
   const awards = [
     {
+      title: "FishyHub",
+      subtitle: "July, 22",
+      lines: [
+        "Internship - SDE",
+        "• Helped them optimise their backend services",
+      ],
+    },
+    {
       title: "BuilderGroop Hackathon",
       subtitle: "mar, 22",
       lines: [
