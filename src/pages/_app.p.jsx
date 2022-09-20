@@ -29,8 +29,8 @@ export default function App({ Component, pageProps }) {
           content="I'm Aditya Singh, a 16 year old self-motivated Tech Enthusiast and a Full Stack developer."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="url.com" />
-        <meta property="og:url" content="https://url.com/" />
+        <meta property="og:site_name" content="adityasingh.tech" />
+        <meta property="og:url" content="https://adityasingh.tech/" />
 
         <link rel="shortcut icon" type="image/svg+xml" href="/favicon.ico" />
       </Head>
