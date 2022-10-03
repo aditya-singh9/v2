@@ -13,7 +13,7 @@ export default function Form(props) {
             placeholder={props.label}
             onChange={(e) => props.setValue(e.target.value)}
             type={props.type}
-            className="px-6 py-3 pl-12 bg-transparent border border-white/75 rounded-md w-full outline-none focus:outline-none focus:border-white transition-colors duration-500 ease-in "
+            className="px-6 py-3 pl-12 bg-transparent border border-white/50 rounded-md w-full outline-none focus:outline-none focus:border-white transition-colors duration-500 ease-in "
           />
           <span className="absolute inset-y-0 left-2 flex items-center pl-2">
             <img src={props.iconPath} className="w-6" />
@@ -25,7 +25,7 @@ export default function Form(props) {
           value={props.value}
           placeholder={props.label}
           onChange={(e) => props.setValue(e.target.value)}
-          className="px-6 py-6 bg-transparent border border-white/75 rounded-md w-full outline-none focus:outline-none focus:border-white transition-colors duration-500 ease-in"
+          className="px-6 py-6 bg-transparent border border-white/50 rounded-md w-full outline-none focus:outline-none focus:border-white transition-colors duration-500 ease-in"
         ></textarea>
       )}
       {props.error && (
