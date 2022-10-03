@@ -15,6 +15,10 @@ export default function Mobile(props) {
       href: "/awards",
     },
     {
+      label: "/contact",
+      href: "/contact"
+    },
+    {
       label: "/stack",
       href: "/stack",
     },
