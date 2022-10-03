@@ -123,7 +123,7 @@ export default function Contacts(props) {
           />
           <button
             onClick={handleSubmit}
-            className="w-full text-center py-6 rounded-md bg-[#1D2D44] hover:bg-indigo-500 transition-colors duration-500 ease-in font-bold flex items-center justify-center"
+            className="w-full text-center py-6 rounded-md hover:bg-indigo-700 bg-indigo-500 transition-colors duration-500 ease-in font-bold flex items-center justify-center"
           >
             {
               loading
