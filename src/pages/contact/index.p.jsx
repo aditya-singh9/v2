@@ -4,7 +4,7 @@ export default function Contact(props) {
     return (
             <Default>
                 <Head>
-                    <title>Projects • Aditya Singh</title>
+                <title>Contact • Aditya Singh</title>
                     <meta name="title" content="Projects • Aditya Singh" />
                     <meta property="og:title" content="Projects • Aditya Singh" />
                     <meta property="twitter:title" content="Projects • Aditya Singh" />
@@ -12,11 +12,11 @@ export default function Contact(props) {
                 <div className="flex flex-col items-start justify-start w-full space-y-4">
                     <div className="flex items-center space-x-2 font-bold text-4xl text-white text-opacity-80 tracking-[-0.02rem]">
                         <img
-                            src="/icons/think.svg"
+                            src="/icons/mail.svg"
                             className="h-[40px] select-none"
                             draggable="false"
                         />
-                        <p>Contact</p>
+                        <p>Contact Me</p>
                     </div>
                     <div className="flex flex-col items-start justify-start w-full space-y-2">
                        
