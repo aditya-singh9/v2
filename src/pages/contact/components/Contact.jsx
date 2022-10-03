@@ -1,6 +1,14 @@
-export default function Contact (props) {
+import { motion } from "framer-motion";
+
+export default function Contact(props) {
+    
     return (
-        <div className="flex  items-center w-fit gap-4">
+        <motion.div
+            className="flex  items-center w-fit gap-4"
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.2 * props.index }}
+        >
             <img
                 src={props.iconPath}
                 alt="icon"
@@ -13,6 +21,6 @@ export default function Contact (props) {
                 :
                 (<a href={props.link} target="_blank" className="text-sm cursor-pointer">{props.text}</a>)
             }
-        </div>
+        </motion.div>
     );
 }
