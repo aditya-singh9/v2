@@ -1,6 +1,6 @@
 export default function Contact (props) {
     return (
-        <div className="flex justify-between items-center">
+        <div className="flex  items-center w-fit gap-4">
             <img
                 src={props.iconPath}
                 alt="icon"
