@@ -21,12 +21,14 @@ export default function Form(props) {
         </div>
       ) : (
         <textarea
+          id={props.id}
+          value={props.value}
           placeholder={props.label}
+          onChange={(e) => props.setValue(e.target.value)}
           className="px-6 py-6 bg-transparent border border-white/75 rounded-md w-full outline-none focus:outline-none focus:border-white transition-colors duration-500 ease-in"
         ></textarea>
       )}
-          {
-              props.error && (
+      {props.error && (
         <AnimatePresence>
           <motion.p
             initial={{
@@ -38,17 +40,16 @@ export default function Form(props) {
             exit={{
               opacity: 0,
             }}
-                          transition={{
-                              duration: 0.5,
-                              ease: "easeInOut"
-                            }}
+            transition={{
+              duration: 0.5,
+              ease: "easeInOut",
+            }}
             className="bold"
           >
             Invalid {props.label.toLowerCase()}
           </motion.p>
-                  </AnimatePresence>
-                )
-      }
+        </AnimatePresence>
+      )}
     </div>
   );
 }
