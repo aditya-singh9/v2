@@ -2,7 +2,9 @@ import Head from "next/head";
 import link from "next/link";
 import Default from "ui/layouts/Default";
 import Contact from "./components/Contact";
+import useForms from "./hooks/useForms";
 export default function Contacts(props) {
+    const [email, EmailInput] = useForms({id: "emailInput",label: "Email" })
     const contactObj = [
         {
             iconPath: "/icons/phone.svg",
