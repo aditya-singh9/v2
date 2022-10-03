@@ -1,7 +1,7 @@
 import Head from "next/head";
 import link from "next/link";
 import Default from "ui/layouts/Default";
-import Contact from "./component/Contact";
+import Contact from "./components/Contact";
 export default function Contacts(props) {
     const contactObj = [
         {
@@ -28,7 +28,7 @@ export default function Contacts(props) {
                     <meta property="twitter:title" content="Projects • Aditya Singh" />
             </Head>
             <section className="flex items-center text-white w-full">
-                <div className="flex flex-col items-start justify-start w-full space-y-4 basis-50%">
+                <div className="flex flex-col items-start justify-start w-full space-y-4 basis-50% gap-12 max-h-screen">
                     <div className="flex items-center space-x-2 tracking-[-0.02rem]">
                         <img
                             src="/icons/email.svg"
@@ -40,12 +40,10 @@ export default function Contacts(props) {
                         {contactObj.map((contact, index) => (
                             <Contact key={"contact-" + index}  {...contact} />
                         ))}
-                    <div className="flex flex-col items-start justify-start space-y-2 basis-50% w-3/4">
-                       
-                    </div>
                 </div>
-                <div>
+                <div className="flex flex-col items-start justify-start space-y-2 basis-50% w-3/4">
                     <p className="w-full">Fill the form and i'll get back to you</p>
+
                 </div>
             </section>
             </Default>
