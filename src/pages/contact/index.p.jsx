@@ -59,7 +59,7 @@ export default function Contacts(props) {
         <motion.div
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.7 }}
+          transition={{ duration: 1, delay: 0.2 }}
           className="flex flex-col items-start justify-start gap-6 basis-50% lg:w-full w-11/12 bg-[#1E222F] border-2 border-white/25 lg:px-12 px-6 py-8 rounded-md"
         >
           <p className="w-full">Fill the form and i'll get back to you</p>
