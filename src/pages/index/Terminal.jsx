@@ -96,7 +96,7 @@ function Socials() {
       animate={{ display: "flex" }}
       transition={{ delay: 4 }}
     >
-      <Link label="Email" link="mailto:aditya0930singh@gmail.com" />
+      <Link label="Email" href="mailto:aditya0930singh@gmail.com" />
       <Link label="GitHub" link="https://github.com/aditya-singh9" />
       <Link label="LinkedIn" link="https://www.linkedin.com/in/aditya-singh9/" />
     </motion.div>
