@@ -1,7 +1,7 @@
 export default function Socials(props) {
   return (
     <div className="flex flex-row items-center justify-start space-x-4">
-      <Discord />
+      <Mail />
       <Twitter />
       <GitHub />
     </div>
@@ -54,7 +54,7 @@ function GitHub() {
   );
 }
 
-function Discord() {
+function Mail() {
   return (
     <a
       target="_blank"
