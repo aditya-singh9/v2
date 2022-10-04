@@ -17,7 +17,7 @@ export default function Navbar(props) {
 
   return (
     <Fragment>
-      <div className="hidden md:flex flex-col items-start justify-start w-full py-10 space-y-4">
+      <div className={`hidden md:flex flex-col items-start justify-start w-full py-10 space-y-4 ${mobile ? `overflow-hidden` : `overflow`}`}>
         <div className="flex flex-row items-center justify-between w-full">
           <Navigation />
           <Socials />
