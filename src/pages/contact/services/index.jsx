@@ -8,7 +8,7 @@ export default async function sendMessage(payload) {
             "Content-Type": "application/json",
         },
     }
-    const result = await fetch(`https://email-backend.cyclic.app/message/send/messageOnly`, options);
+    const result = await (await fetch(`https://p-deploy.vercel.app/message/send/messageOnly`, options));
 
     return result.json();
 }
